@@ -153,13 +153,13 @@ export const CATEGORIES: CategoryInfo[] = [
         maxLength: 20
       },
       { 
-        label: '-',
-        placeholder: '',
+        label: 'Humans',
+        placeholder: 'single person, a few people, many people',
         maxLength: 20
       },
       { 
-        label: '-',
-        placeholder: '',
+        label: 'Location',
+        placeholder: 'desert, pyramids, country',
         maxLength: 20
       }
     ]
