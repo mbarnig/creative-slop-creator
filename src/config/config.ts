@@ -4,9 +4,28 @@ import { CategoryInfo, PromptTemplate, GalleryItem } from '../lib/types';
 export const APP_TITLE = "Create a Slop";
 export const APP_DESCRIPTION = "Generate AI images based on your creative inputs using cutting-edge technology";
 export const INTRODUCTION_TEXT = `
-  "Slop" is a creative AI-generated image based on specific parameters you select. 
-  Start by choosing a category and filling in the requested details, then watch as the AI creates a unique image just for you.
-  This application demonstrates how controlled inputs can lead to interesting AI-generated visual outcomes.
+Reason for This Initiative
+
+"In today's digital landscape, AI-generated content is everywhere, from high-quality artwork to low-effort, mass-produced images often referred to as slop.
+A growing trend in social media is the use of sloppy AI-generated images paired with self-pitying messages like 'Nobody cares about me' or 'I worked so hard, but no one noticed.' 
+These posts are not just harmless expressions of emotion—they are intentional engagement traps, designed to manipulate emotions, trigger responses, 
+and exploit social media algorithms for visibility. By understanding these tactics, we can become more aware of how AI is used—not just for creativity 
+but also for emotional manipulation and low-effort content farming."  
+
+Goal of This Initiative
+
+"The goal of showcasing these examples is to help social media users critically analyze AI-generated content and recognize how AI can be used to influence online behavior.
+Through this, we aim to:
+
+* Identify low-effort AI content and understand its role in algorithmic engagement.
+* Recognize emotional manipulation tactics used to drive social media interaction.
+* Develop media literacy by distinguishing between genuine AI creativity and mass-produced slop.
+* Encourage ethical and meaningful AI use by highlighting how AI can be leveraged for real creativity rather than viral gimmicks."
+
+Artworks instead of Slops
+This app shows in the Image Gallery an overview of some viral slops. To show how easy it is to create this sort of content, the present app allows you to select a topic
+with radio buttons and to enter some short text prompts in the related input fields to give some guidance to the LetzAI image generator.
+There is one hick with this process. LetzAI is an advanced hight quality AI generator. The results are real artworks which become only slop if you 
 `;
 
 export const CATEGORIES: CategoryInfo[] = [
