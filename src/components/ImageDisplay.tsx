@@ -1,9 +1,9 @@
 
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
-import { Play, XCircle } from 'lucide-react';
+import { Play, XCircle, StopCircle } from 'lucide-react';
 import { toast } from 'sonner';
-import { generateImage } from '../lib/api';
+import { generateImage, interruptImageGeneration } from '../lib/api';
 import { CategoryType } from '../lib/types';
 import { PROMPT_TEMPLATES } from '../config/config';
 
@@ -22,6 +22,7 @@ const ImageDisplay: React.FC<ImageDisplayProps> = ({
 }) => {
   const [isGenerating, setIsGenerating] = useState(false);
   const [generatedImageUrl, setGeneratedImageUrl] = useState<string | null>(null);
+  const [currentImageId, setCurrentImageId] = useState<string | null>(null);
   
   const getPrompt = (): string => {
     if (!selectedCategory) return '';
@@ -66,6 +67,7 @@ const ImageDisplay: React.FC<ImageDisplayProps> = ({
     }
     
     setIsGenerating(true);
+    toast.loading('Starting image generation...', { id: 'image-generation' });
     
     try {
       const result = await generateImage({
@@ -73,8 +75,13 @@ const ImageDisplay: React.FC<ImageDisplayProps> = ({
         apiKey
       });
       
+      toast.dismiss('image-generation');
+      
       if (result.success && result.imageUrl) {
         setGeneratedImageUrl(result.imageUrl);
+        if (result.imageId) {
+          setCurrentImageId(result.imageId);
+        }
         toast.success('Image generated successfully');
       } else {
         toast.error(result.error || 'Failed to generate image');
@@ -89,7 +96,32 @@ const ImageDisplay: React.FC<ImageDisplayProps> = ({
   
   const handleClear = () => {
     setGeneratedImageUrl(null);
+    setCurrentImageId(null);
     onClear();
+  };
+  
+  const handleInterrupt = async () => {
+    if (!currentImageId || !apiKey) {
+      toast.error('Cannot interrupt: missing image ID or API key');
+      return;
+    }
+    
+    toast.loading('Interrupting image generation...', { id: 'interrupt' });
+    
+    try {
+      const success = await interruptImageGeneration(currentImageId, apiKey);
+      toast.dismiss('interrupt');
+      
+      if (success) {
+        toast.success('Image generation interrupted');
+        setIsGenerating(false);
+      } else {
+        toast.error('Failed to interrupt image generation');
+      }
+    } catch (error) {
+      console.error('Error interrupting image generation:', error);
+      toast.error('Failed to interrupt image generation');
+    }
   };
   
   return (
@@ -100,14 +132,25 @@ const ImageDisplay: React.FC<ImageDisplayProps> = ({
           
           <div className="space-y-6">
             <div className="flex justify-center gap-4">
-              <Button
-                onClick={handleGenerate}
-                disabled={isGenerating || !selectedCategory || !apiKey}
-                className="gap-2 min-w-28"
-              >
-                <Play size={16} />
-                {isGenerating ? 'Generating...' : 'Start'}
-              </Button>
+              {isGenerating ? (
+                <Button
+                  onClick={handleInterrupt}
+                  variant="destructive"
+                  className="gap-2 min-w-28"
+                >
+                  <StopCircle size={16} />
+                  Stop
+                </Button>
+              ) : (
+                <Button
+                  onClick={handleGenerate}
+                  disabled={isGenerating || !selectedCategory || !apiKey}
+                  className="gap-2 min-w-28"
+                >
+                  <Play size={16} />
+                  Start
+                </Button>
+              )}
               
               <Button
                 onClick={handleClear}
@@ -122,8 +165,9 @@ const ImageDisplay: React.FC<ImageDisplayProps> = ({
             
             <div className="relative aspect-square max-w-md mx-auto rounded-lg overflow-hidden bg-accent/30">
               {isGenerating ? (
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-10 h-10 border-4 border-primary/30 border-t-primary rounded-full animate-spin" />
+                <div className="absolute inset-0 flex items-center justify-center flex-col">
+                  <div className="w-10 h-10 border-4 border-primary/30 border-t-primary rounded-full animate-spin mb-4" />
+                  <p className="text-sm text-muted-foreground">Generating image...</p>
                 </div>
               ) : generatedImageUrl ? (
                 <img

@@ -52,5 +52,23 @@ export interface GenerateImageParams {
 export interface GenerateImageResponse {
   success: boolean;
   imageUrl?: string;
+  imageId?: string;
   error?: string;
+}
+
+export interface ImageData {
+  id: string;
+  prompt: string;
+  status: 'new' | 'in progress' | 'ready' | 'failed';
+  progress: number;
+  previewImage: string;
+  hasWatermark: boolean;
+  privacy: 'private' | 'public';
+  createdAt: string;
+  imageVersions?: {
+    original?: string;
+    '1920x1920'?: string;
+    '640x640'?: string;
+    [key: string]: string | undefined;
+  };
 }
