@@ -1,69 +1,109 @@
-# Welcome to your Lovable project
+
+# Create a Slop - AI Image Generator
+
+"Create a Slop" is an elegant web application that generates AI images based on user inputs through category selection and short text input fields.
 
 ## Project info
 
 **URL**: https://lovable.dev/projects/ef0b938c-4bde-40c7-a1de-12cefa6688d8
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- Choose from 7 different image categories
+- Dynamic input fields that change based on selected category
+- Automatic prompt generation
+- Secure API key storage in local storage
+- Image generation using the LetzAI API
+- Gallery of example images
 
-**Use Lovable**
+## Configuration
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ef0b938c-4bde-40c7-a1de-12cefa6688d8) and start prompting.
+All text content and configuration is easily modifiable via files in the `src/config` directory:
 
-Changes made via Lovable will be committed automatically to this repo.
+### Main Configuration (`src/config/config.ts`)
 
-**Use your preferred IDE**
+- **Title & Description**: Change the application title and description
+- **Introduction Text**: Modify the text in the introduction accordion
+- **Categories**: Configure the categories and their input fields
+- **Prompt Templates**: Modify the prompt templates used for each category
+- **Gallery Items**: Add or modify example images in the gallery
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Image Configuration
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **Placeholder Image**: Replace the image at `public/images/placeholder.png`
+- **Gallery Images**: Add or modify images in the `public/images/gallery/` directory
+  
+## How to modify the application
 
-Follow these steps:
+### Changing the title, description, or introduction
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Edit the values in `src/config/config.ts`:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```typescript
+export const APP_TITLE = "Your New Title";
+export const APP_DESCRIPTION = "Your new description";
+export const INTRODUCTION_TEXT = "Your new introduction text";
 ```
 
-**Edit a file directly in GitHub**
+### Adding or modifying categories
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Edit the `CATEGORIES` array in `src/config/config.ts`:
 
-**Use GitHub Codespaces**
+```typescript
+export const CATEGORIES: CategoryInfo[] = [
+  {
+    id: 'your-category-id',
+    label: 'Your Category Name',
+    description: 'Your category description',
+    fields: [
+      { 
+        label: 'Your Field Label',
+        placeholder: 'Your placeholder text',
+        maxLength: 20
+      },
+      // Add more fields as needed
+    ]
+  },
+  // Add more categories as needed
+];
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Modifying prompt templates
 
-## What technologies are used for this project?
+Edit the `PROMPT_TEMPLATES` array in `src/config/config.ts`:
 
-This project is built with .
+```typescript
+export const PROMPT_TEMPLATES: PromptTemplate[] = [
+  {
+    id: 'your-category-id',
+    template: 'Your prompt template with {0}, {1}, and {2} placeholders'
+  },
+  // Add more templates as needed
+];
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Adding new gallery examples
 
-## How can I deploy this project?
+1. Add your image to the `public/images/gallery/` directory
+2. Edit the `GALLERY_ITEMS` array in `src/config/config.ts`:
 
-Simply open [Lovable](https://lovable.dev/projects/ef0b938c-4bde-40c7-a1de-12cefa6688d8) and click on Share -> Publish.
+```typescript
+export const GALLERY_ITEMS: GalleryItem[] = [
+  {
+    id: 'unique-id',
+    category: 'your-category-id',
+    image: '/images/gallery/your-image.jpg',
+    title: 'Your Image Title',
+    description: 'Your image description'
+  },
+  // Add more gallery items as needed
+];
+```
 
-## I want to use a custom domain - is that possible?
+## API Integration
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+The application is designed to integrate with the LetzAI API. For a real implementation, modify the `generateImage` function in `src/lib/api.ts` to make actual API calls.
+
+## License
+
+This project is private and confidential.
