@@ -227,7 +227,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: '2',
     category: 'birthday',
-    image: '/images/gallery/birthday-101.jpg',
+    image: '/images/gallery/birthday-101.png',
     title: '101th Birthday',
     description: 'A young girl celebrating her 7th birthday with friends'
   },
