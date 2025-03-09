@@ -40,6 +40,8 @@ const Index: React.FC = () => {
         <Header />
         
         <div className="space-y-6">
+          <IntroSection />
+          
           <Gallery />
           
           <TechnicalInfo />
