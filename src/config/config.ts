@@ -53,7 +53,7 @@ Their names will be included in the enhanced prompts displayed in the prompt acc
 `;
 
 export const TECHNICAL_INFO_TEXT = `
-# Technical Development
+# Technical Development of the Frontend
 
 The first version of this app has been programmed with the AI tool [lovable.dev](https://lovable.dev/), a superhuman full stack engineer, in a time-slot of 3 hours. 
 The full process took 5 steps :
@@ -67,12 +67,12 @@ I submitted the basic instructions to ChatGPT to correct and improve the instruc
 are saved in the public folder of the app.
 
 
-## Technical Implementation
+# Technical Implementation of the Backend
 
 This application uses the [LetzAI API](https://api.letz.ai) to generate high-quality AI images based on user inputs.
 Below you'll find technical details about the implementation and resources for developers.
 
-### API Integration
+## API Integration
 
 The application integrates with the LetzAI API using the following workflow:
 1. User selects a category and enters parameters
@@ -81,13 +81,13 @@ The application integrates with the LetzAI API using the following workflow:
 4. The application polls for image generation status
 5. When ready, the image is displayed in the UI
 
-### Resources
+## Resources
 
 - [API Documentation](/resources/api-docs.txt)
 - [Implementation Guide](/resources/implementation-guide.pdf)
 - [Usage Examples](/resources/examples.txt)
 
-### Code Snippets
+## Code Snippets
 
 \`\`\`typescript
 // Example API call
