@@ -1,8 +1,11 @@
 
 import { CategoryInfo, PromptTemplate, GalleryItem } from '../lib/types';
 
-export const APP_TITLE = "Create a Slop";
-export const APP_DESCRIPTION = "Generate AI images based on your creative inputs using cutting-edge technology";
+export const APP_TITLE = "AI Slop: Lazy Art or Genius ?";
+export const APP_DESCRIPTION = "In the age of AI-generated content, a new wave of low-effort, mass-produced images has taken over social media—often called AI slop.
+These crude, sometimes bizarre visuals are frequently paired with self-pitying or emotionally manipulative captions designed to farm engagement. 
+But is this just lazy, algorithm-driven junk, or is there a strange genius behind it? This session explores how AI slop thrives in the attention economy, 
+why it spreads so fast, and whether it represents the decline of creativity—or a new form of digital expression.";
 export const INTRODUCTION_TEXT = `
 Reason for This Initiative
 
