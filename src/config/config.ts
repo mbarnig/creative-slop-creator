@@ -10,33 +10,46 @@ why it spreads so fast, and whether it represents the decline of creativity—or
 export const INTRODUCTION_TEXT = `
 ## Reason for This Initiative
 
-"In today's digital landscape, AI-generated content is everywhere, from high-quality artwork to low-effort, mass-produced images often referred to as slop.
+In today's digital landscape, AI-generated content is everywhere, from high-quality artwork to low-effort, mass-produced images often referred to as slop.
 A growing trend in social media is the use of sloppy AI-generated images paired with self-pitying messages like 'Nobody cares about me' or 'I worked so hard, but no one noticed.' 
 These posts are not just harmless expressions of emotion—they are intentional engagement traps, designed to manipulate emotions, trigger responses, 
 and exploit social media algorithms for visibility. By understanding these tactics, we can become more aware of how AI is used—not just for creativity 
-but also for emotional manipulation and low-effort content farming."    
+but also for emotional manipulation and low-effort content farming.    
 
 
 ## Goal of This Initiative
 
-"The goal of showcasing these examples is to help social media users critically analyze AI-generated content and recognize how AI can be used to influence online behavior.
+The goal of showcasing these examples is to help social media users critically analyze AI-generated content and recognize how AI can be used to influence online behavior.
 Through this, we aim to:
 
 * Identify low-effort AI content and understand its role in algorithmic engagement.
 * Recognize emotional manipulation tactics used to drive social media interaction.
 * Develop media literacy by distinguishing between genuine AI creativity and mass-produced slop.
-* Encourage ethical and meaningful AI use by highlighting how AI can be leveraged for real creativity rather than viral gimmicks."
+* Encourage ethical and meaningful AI use by highlighting how AI can be leveraged for real creativity rather than viral gimmicks.
 
 
 
 ## Gallery of Slop Images    
 
-This app shows in the Image Gallery an overview of some viral slops. 
+This app provides an Image Gallery showcasing an overview of viral AI slops—low-effort, AI-generated images designed to maximize engagement. 
+The most popular types of slops typically fall into the following categories :
 
-## Remove slops and create LetzAI Artworks    
+* Large families or birthday gatherings accompanied by self-pitying messages like "We are poor" or "I am alone," evoking sympathy.
+* Sculptures, crafts, farming, or cooking paired with hardship-driven messages such as "We work so hard, but nobody cares," appealing to emotions of struggle and neglect.
+* Animals with their young, leveraging cuteness and emotional bonding to encourage widespread sharing.
+* Archaeological discoveries with awe-inspiring descriptions, sparking curiosity and amazement that people feel compelled to share.   
 
-To show how easy it is to create this sort of content, the present app allows you to select a topic
-with radio buttons and to enter some short text prompts in the related input fields to give some guidance to the LetzAI image generator. 
+By analyzing these trends, the app helps users understand how AI slop manipulates emotions to drive virality on social media.
+
+## From Slop to Stunning: Create with LetzAI
+
+This app demonstrates how effortless it is to generate AI-powered images—but instead of settling for low-quality, mass-produced slop, 
+we empower you to create high-quality LetzAI artworks.
+Simply select a topic using radio buttons and enter a short text prompt to guide the AI image generator. Unlike free, low-quality alternatives, 
+LetzAI leverages one of the world’s best AI image generators, proudly developed in Luxembourg.
+Your brief prompt will be automatically refined using advanced templates and models crafted by some of the most renowned Generative AI artists worldwide. 
+Their names will be included in the enhanced prompts displayed in the prompt accordion below, ensuring your creation benefits from expert-level AI artistry.
+
 `;
 
 export const TECHNICAL_INFO_TEXT = `
