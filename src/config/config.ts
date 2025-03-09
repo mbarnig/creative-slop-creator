@@ -8,20 +8,6 @@ But is this just lazy, algorithm-driven junk, or is there a strange genius behin
 why it spreads so fast, and whether it represents the decline of creativity—or a new form of digital expression.`;
 
 export const INTRODUCTION_TEXT = `
-# Technical Development
-
-The first version of this app has been programmed with the AI tool [lovable.dev](https://lovable.dev/), a superhuman full stack engineer, in a time-slot of 3 hours. 
-The full process took 5 steps :
-
-## Basic Instructions
-I wrote a small guide in bad english to specify the layout and the features of the present web-app. The [original document](/resources/examples.txt) 
-is saved in the public folder of the app.
-
-## Enhanced Instructions
-I submitted the basic instructions to ChatGPT to correct and improve the instructions. The [results in pdf format](/resources/implementatio-guide) 
-are saved in the public folder of the app.
-
-
 ## Reason for This Initiative
 
 In today's digital landscape, AI-generated content is everywhere, from high-quality artwork to low-effort, mass-produced images often referred to as slop.
@@ -67,6 +53,20 @@ Their names will be included in the enhanced prompts displayed in the prompt acc
 `;
 
 export const TECHNICAL_INFO_TEXT = `
+# Technical Development
+
+The first version of this app has been programmed with the AI tool [lovable.dev](https://lovable.dev/), a superhuman full stack engineer, in a time-slot of 3 hours. 
+The full process took 5 steps :
+
+## Basic Instructions
+I wrote a small guide in bad english to specify the layout and the features of the present web-app. The [original document](/resources/examples.txt) 
+is saved in the public folder of the app.
+
+## Enhanced Instructions
+I submitted the basic instructions to ChatGPT to correct and improve the instructions. The [results in pdf format](/resources/implementatio-guide) 
+are saved in the public folder of the app.
+
+
 ## Technical Implementation
 
 This application uses the [LetzAI API](https://api.letz.ai) to generate high-quality AI images based on user inputs.
