@@ -63,7 +63,7 @@ I wrote a small guide in bad english to specify the layout and the features of t
 is saved in the public folder of the app.
 
 ## Enhanced Instructions
-I submitted the basic instructions to ChatGPT to correct and improve the instructions. The [results in pdf format](/resources/implementatio-guide) 
+I submitted the basic instructions to ChatGPT to correct and improve the instructions. The [results in pdf format](/resources/implementation-guide.pdf) 
 are saved in the public folder of the app.
 
 
