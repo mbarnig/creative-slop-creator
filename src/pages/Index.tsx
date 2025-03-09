@@ -40,8 +40,6 @@ const Index: React.FC = () => {
         <Header />
         
         <div className="space-y-6">
-          <IntroSection />
-          
           <CategorySelector 
             selectedCategory={selectedCategory} 
             onSelectCategory={handleSelectCategory} 
@@ -72,7 +70,9 @@ const Index: React.FC = () => {
           />
           
           <Gallery />
-
+          
+          <IntroSection />
+          
           <TechnicalInfo />
         </div>
       </div>
