@@ -40,6 +40,12 @@ const Index: React.FC = () => {
         <Header />
         
         <div className="space-y-6">
+          <Gallery />
+          
+          <TechnicalInfo />
+          
+          <ApiKeyInput onApiKeyChange={setApiKey} />
+          
           <CategorySelector 
             selectedCategory={selectedCategory} 
             onSelectCategory={handleSelectCategory} 
@@ -60,20 +66,12 @@ const Index: React.FC = () => {
             />
           )}
           
-          <ApiKeyInput onApiKeyChange={setApiKey} />
-          
           <ImageDisplay 
             selectedCategory={selectedCategory}
             values={formValues}
             apiKey={apiKey}
             onClear={handleClear}
           />
-          
-          <Gallery />
-          
-          <IntroSection />
-          
-          <TechnicalInfo />
         </div>
       </div>
     </div>
