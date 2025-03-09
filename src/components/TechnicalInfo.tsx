@@ -29,7 +29,14 @@ const TechnicalInfo: React.FC = () => {
                       p: { component: 'p', props: { className: 'mb-4' } },
                       ul: { component: 'ul', props: { className: 'list-disc pl-5 mb-4' } },
                       li: { component: 'li', props: { className: 'mb-1' } },
-                      a: { component: 'a', props: { className: 'text-primary hover:underline' } },
+                      a: { 
+                        component: 'a', 
+                        props: { 
+                          className: 'text-primary hover:underline',
+                          target: '_blank',
+                          rel: 'noopener noreferrer'
+                        } 
+                      },
                       blockquote: { component: 'blockquote', props: { className: 'border-l-4 border-gray-300 pl-4 italic my-4' } },
                       code: { component: 'code', props: { className: 'bg-gray-100 rounded px-1 py-0.5 text-sm font-mono' } },
                       pre: { 
