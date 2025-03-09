@@ -1,6 +1,6 @@
 import { CategoryInfo, PromptTemplate, GalleryItem } from '../lib/types';
 
-export const APP_TITLE = "AI Slop: Lazy Art or Genius ?";
+export const APP_TITLE = "AI Slop : Lazy Art or Genius ?";
 
 export const APP_DESCRIPTION = `In the age of AI-generated content, a new wave of low-effort, mass-produced images has taken over social media—often called AI slop.
 These crude, sometimes bizarre visuals are frequently paired with self-pitying or emotionally manipulative captions designed to farm engagement. 
@@ -8,7 +8,7 @@ But is this just lazy, algorithm-driven junk, or is there a strange genius behin
 why it spreads so fast, and whether it represents the decline of creativity—or a new form of digital expression.`;
 
 export const INTRODUCTION_TEXT = `
-Reason for This Initiative
+**Reason for This Initiative**
 
 "In today's digital landscape, AI-generated content is everywhere, from high-quality artwork to low-effort, mass-produced images often referred to as slop.
 A growing trend in social media is the use of sloppy AI-generated images paired with self-pitying messages like 'Nobody cares about me' or 'I worked so hard, but no one noticed.' 
@@ -16,7 +16,7 @@ These posts are not just harmless expressions of emotion—they are intentional 
 and exploit social media algorithms for visibility. By understanding these tactics, we can become more aware of how AI is used—not just for creativity 
 but also for emotional manipulation and low-effort content farming."  
 
-Goal of This Initiative
+**Goal of This Initiative**
 
 "The goal of showcasing these examples is to help social media users critically analyze AI-generated content and recognize how AI can be used to influence online behavior.
 Through this, we aim to:
@@ -26,10 +26,12 @@ Through this, we aim to:
 * Develop media literacy by distinguishing between genuine AI creativity and mass-produced slop.
 * Encourage ethical and meaningful AI use by highlighting how AI can be leveraged for real creativity rather than viral gimmicks."
 
-Artworks instead of Slops
-This app shows in the Image Gallery an overview of some viral slops. To show how easy it is to create this sort of content, the present app allows you to select a topic
-with radio buttons and to enter some short text prompts in the related input fields to give some guidance to the LetzAI image generator.
-There is one hick with this process. LetzAI is an advanced hight quality AI generator. The results are real artworks which become only slop if you 
+**Gallery of Slop Images**
+This app shows in the Image Gallery an overview of some viral slops. 
+
+**Remove slops and create LetzAI Artworks**
+To show how easy it is to create this sort of content, the present app allows you to select a topic
+with radio buttons and to enter some short text prompts in the related input fields to give some guidance to the LetzAI image generator. 
 `;
 
 export const TECHNICAL_INFO_TEXT = `
