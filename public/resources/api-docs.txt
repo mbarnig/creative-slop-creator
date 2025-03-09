@@ -1,0 +1,64 @@
+
+# LetzAI API Documentation
+
+## Base URL
+BaseURL: https://api.letz.ai
+
+## Authentication
+All API requests require a valid API key, which should be provided in the Authorization header:
+Authorization: Bearer YOUR_API_KEY
+
+## Endpoints
+
+### Images
+- POST /images
+  Creates a new image generation task.
+  
+  Body parameters:
+  - prompt: string (required) - The text prompt for image generation
+  - width: integer (520-2160, default: 1600) - Width of the generated image
+  - height: integer (520-2160, default: 1600) - Height of the generated image
+  - quality: integer (1-5, default: 2) - Quality level of the generated image
+  - creativity: integer (1-5, default: 2) - Creativity level for generation
+  - hasWatermark: boolean (default: true) - Whether to include a watermark
+  - systemVersion: integer (2 or 3, default: account setting) - Model version
+  - mode: string (default, sigma, turbo; default: "default") - Generation mode
+
+  Response (200 OK):
+  {
+    "id": string,
+    "prompt": string,
+    "status": string ("new", "in progress", "ready", "failed"),
+    "progress": integer (0-100),
+    "previewImage": string (base64),
+    "hasWatermark": boolean,
+    "privacy": string ("private", "public"),
+    "createdAt": string (ISO date)
+  }
+
+- GET /images/{id}
+  Retrieves the status of an image generation task.
+  
+  Path parameters:
+  - id: string (required) - The ID of the image generation task
+  
+  Response (200 OK):
+  {
+    "id": string,
+    "prompt": string,
+    "status": string ("new", "in progress", "ready", "failed"),
+    "progress": integer (0-100),
+    "previewImage": string (base64),
+    "hasWatermark": boolean,
+    "privacy": string ("private", "public"),
+    "createdAt": string (ISO date),
+    "imageVersions": {
+      "original": string (URL),
+      "1920x1920": string (URL),
+      "640x640": string (URL)
+    }
+  }
+  
+  Note: Poll this endpoint every 3 seconds until status is "ready" or "failed".
+
+For more details, refer to the full API documentation at https://api.letz.ai/doc

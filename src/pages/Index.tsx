@@ -8,6 +8,7 @@ import PromptDisplay from '@/components/PromptDisplay';
 import ApiKeyInput from '@/components/ApiKeyInput';
 import ImageDisplay from '@/components/ImageDisplay';
 import Gallery from '@/components/Gallery';
+import TechnicalInfo from '@/components/TechnicalInfo';
 import { CategoryType } from '@/lib/types';
 import { CATEGORIES } from '@/config/config';
 
@@ -71,6 +72,8 @@ const Index: React.FC = () => {
           />
           
           <Gallery />
+
+          <TechnicalInfo />
         </div>
       </div>
     </div>

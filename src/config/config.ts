@@ -28,6 +28,49 @@ with radio buttons and to enter some short text prompts in the related input fie
 There is one hick with this process. LetzAI is an advanced hight quality AI generator. The results are real artworks which become only slop if you 
 `;
 
+export const TECHNICAL_INFO_TEXT = `
+## Technical Implementation
+
+This application uses the [LetzAI API](https://api.letz.ai) to generate high-quality AI images based on user inputs. Below you'll find technical details about the implementation and resources for developers.
+
+### API Integration
+
+The application integrates with the LetzAI API using the following workflow:
+1. User selects a category and enters parameters
+2. The app generates a prompt based on the template
+3. A POST request is sent to the LetzAI API endpoint
+4. The application polls for image generation status
+5. When ready, the image is displayed in the UI
+
+### Resources
+
+- [API Documentation](/resources/api-docs.txt)
+- [Implementation Guide](/resources/implementation-guide.pdf)
+- [Usage Examples](/resources/examples.txt)
+
+### Code Snippets
+
+\`\`\`typescript
+// Example API call
+const response = await fetch('https://api.letz.ai/images', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+    'Authorization': 'Bearer YOUR_API_KEY'
+  },
+  body: JSON.stringify({
+    prompt: generatedPrompt,
+    width: 1440,
+    height: 1440,
+    quality: 3,
+    creativity: 4
+  })
+});
+\`\`\`
+
+For more information about the implementation details, please refer to the [GitHub repository](https://github.com/yourusername/create-a-slop).
+`;
+
 export const CATEGORIES: CategoryInfo[] = [
   {
     id: 'large-family',

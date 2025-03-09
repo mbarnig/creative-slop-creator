@@ -1,0 +1,146 @@
+
+# LetzAI API Usage Examples
+
+## JavaScript Example
+
+```javascript
+const generateImage = async (prompt, apiKey) => {
+  try {
+    // Step 1: Create image generation request
+    const createResponse = await fetch('https://api.letz.ai/images', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${apiKey}`
+      },
+      body: JSON.stringify({
+        prompt,
+        width: 1440,
+        height: 1440,
+        quality: 3,
+        creativity: 4,
+        hasWatermark: true,
+        mode: "default"
+      })
+    });
+    
+    if (!createResponse.ok) {
+      throw new Error(`API error: ${createResponse.status}`);
+    }
+    
+    const imageData = await createResponse.json();
+    const imageId = imageData.id;
+    
+    // Step 2: Poll for image status
+    return new Promise((resolve, reject) => {
+      const checkStatus = async () => {
+        try {
+          const statusResponse = await fetch(`https://api.letz.ai/images/${imageId}`, {
+            method: 'GET',
+            headers: {
+              'Authorization': `Bearer ${apiKey}`
+            }
+          });
+          
+          if (!statusResponse.ok) {
+            throw new Error(`Status check failed: ${statusResponse.status}`);
+          }
+          
+          const status = await statusResponse.json();
+          
+          if (status.status === 'ready') {
+            resolve(status);
+          } else if (status.status === 'failed') {
+            reject(new Error('Image generation failed'));
+          } else {
+            // Continue polling
+            setTimeout(checkStatus, 3000);
+          }
+        } catch (error) {
+          reject(error);
+        }
+      };
+      
+      // Start polling
+      checkStatus();
+    });
+  } catch (error) {
+    console.error('Error generating image:', error);
+    throw error;
+  }
+};
+
+// Usage example
+generateImage('A beautiful sunset over mountains', 'YOUR_API_KEY')
+  .then(imageData => {
+    console.log('Image generated successfully:', imageData);
+    // Use imageData.imageVersions.original to get the URL of the generated image
+  })
+  .catch(error => {
+    console.error('Failed to generate image:', error);
+  });
+```
+
+## Python Example
+
+```python
+import requests
+import time
+
+def generate_image(prompt, api_key):
+    headers = {
+        'Content-Type': 'application/json',
+        'Authorization': f'Bearer {api_key}'
+    }
+    
+    # Step 1: Create image generation request
+    create_data = {
+        'prompt': prompt,
+        'width': 1440,
+        'height': 1440,
+        'quality': 3,
+        'creativity': 4,
+        'hasWatermark': True,
+        'mode': 'default'
+    }
+    
+    create_response = requests.post(
+        'https://api.letz.ai/images',
+        headers=headers,
+        json=create_data
+    )
+    
+    if create_response.status_code != 200:
+        raise Exception(f"API error: {create_response.status_code}")
+    
+    image_data = create_response.json()
+    image_id = image_data['id']
+    
+    # Step 2: Poll for image status
+    while True:
+        status_response = requests.get(
+            f'https://api.letz.ai/images/{image_id}',
+            headers=headers
+        )
+        
+        if status_response.status_code != 200:
+            raise Exception(f"Status check failed: {status_response.status_code}")
+        
+        status = status_response.json()
+        
+        if status['status'] == 'ready':
+            return status
+        elif status['status'] == 'failed':
+            raise Exception("Image generation failed")
+        
+        # Wait before checking again
+        time.sleep(3)
+
+# Usage example
+try:
+    image_data = generate_image('A beautiful sunset over mountains', 'YOUR_API_KEY')
+    print('Image generated successfully:', image_data)
+    # Use image_data['imageVersions']['original'] to get the URL of the generated image
+except Exception as e:
+    print('Failed to generate image:', e)
+```
