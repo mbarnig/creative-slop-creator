@@ -100,20 +100,6 @@ The entire process took me less than a day—compared to an estimated two-week d
 
 To provide a visual reference, here is a screenshot of the Lovable.dev platform.
 
-# Technical Development of the Frontend
-
-The first version of this app has been programmed with the AI tool [lovable.dev](https://lovable.dev/), a superhuman full stack engineer, in a time-slot of 3 hours. 
-The full process took 5 steps :
-
-## Basic Instructions
-I wrote a small guide in bad english to specify the layout and the features of the present web-app. The [original document](/resources/examples.txt) 
-is saved in the public folder of the app.
-
-## Enhanced Instructions
-I submitted the basic instructions to ChatGPT to correct and improve the instructions. The [results in pdf format](/resources/implementation-guide.pdf) 
-are saved in the public folder of the app.
-
-
 # Technical Implementation of the Backend
 
 This application uses the [LetzAI API](https://api.letz.ai) to generate high-quality AI images based on user inputs.
