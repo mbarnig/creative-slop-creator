@@ -53,6 +53,53 @@ Their names will be included in the enhanced prompts displayed in the prompt acc
 `;
 
 export const TECHNICAL_INFO_TEXT = `
+# Technical Development
+
+The first version of this app was developed using the AI tool [lovable.dev](https://lovable.dev/), a superhuman full-stack engineer, within a time frame of three hours.
+The entire process consisted of five steps:
+
+## 1. Basic Instructions
+
+I initially wrote a brief guide in broken English to outline the layout and features of this web app. The [original document](/resources/examples.txt) is stored in the public folder of the app.
+
+## 2. Enhanced Instructions
+
+To refine and clarify my initial draft, I submitted it to ChatGPT for correction and improvement.
+The revised version, saved as a [PDF document](/resources/implementation-guide), is also available in the public folder of the app.
+
+## 3. Programming and Testing
+
+I then entered the enhanced instructions into the Lovable.dev Dashboard. The AI engineering bot generated the required code for the specified web app within minutes.
+The script contents were displayed on screen, and this [development report](/resources/dev-report.txt) was generated.
+
+Once the app was initialized in a sandbox environment, I conducted the first test. The buttons, input fields, and accordions functioned as expected.
+However, when I attempted to generate an image, the image was created, but it did not appear in the designated placeholder window.
+
+## 4. Error Correction
+
+I reported the issue to the Lovable-Bot with the following message:
+
+"Everything works fine except for image generation. A message confirms that the image has been created, but it does not appear. 
+The placeholder image is not being replaced by the generated image."
+
+The Lovable-Bot identified and resolved the issue, providing a [fix-report](/ressources/fix-report.txt). After implementing these modifications, the app functioned correctly.
+
+## 5. Fine-Tuning
+
+In the final stage, I refined the title, description, introduction, and technical information with the assistance of ChatGPT.
+I uploaded images and labels for the Slop Gallery and specified image prompts for various topics.
+
+These modifications were made in my [GitHub repository]((https://github.com/mbarnig/creative-slop-creator/) which was automatically created by Lovable.dev and synchronizes bidirectionally with code changes.
+
+After conducting final tests, I also adjusted the initial layout to enhance the user experience.
+
+## Summary
+The entire process took me less than a day—compared to an estimated two-week development period without AI assistance.
+
+## Illustration
+
+To provide a visual reference, here is a screenshot of the Lovable.dev platform.
+
 # Technical Development of the Frontend
 
 The first version of this app has been programmed with the AI tool [lovable.dev](https://lovable.dev/), a superhuman full stack engineer, in a time-slot of 3 hours. 
