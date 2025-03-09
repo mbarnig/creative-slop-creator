@@ -19,9 +19,25 @@ const IntroSection: React.FC = () => {
               Introduction
             </AccordionTrigger>
             <AccordionContent className="px-6 pb-6 text-foreground/80 leading-relaxed">
-              <Markdown className="prose prose-sm dark:prose-invert max-w-none">
-                {INTRODUCTION_TEXT}
-              </Markdown>
+              <div className="prose prose-sm dark:prose-invert max-w-none">
+                <Markdown
+                  options={{
+                    overrides: {
+                      h1: { component: 'h1', props: { className: 'text-2xl font-bold mt-6 mb-4' } },
+                      h2: { component: 'h2', props: { className: 'text-xl font-bold mt-5 mb-3' } },
+                      h3: { component: 'h3', props: { className: 'text-lg font-bold mt-4 mb-2' } },
+                      p: { component: 'p', props: { className: 'mb-4' } },
+                      ul: { component: 'ul', props: { className: 'list-disc pl-5 mb-4' } },
+                      li: { component: 'li', props: { className: 'mb-1' } },
+                      a: { component: 'a', props: { className: 'text-primary hover:underline' } },
+                      blockquote: { component: 'blockquote', props: { className: 'border-l-4 border-gray-300 pl-4 italic my-4' } },
+                      code: { component: 'code', props: { className: 'bg-gray-100 rounded px-1 py-0.5 text-sm' } },
+                    }
+                  }}
+                >
+                  {INTRODUCTION_TEXT}
+                </Markdown>
+              </div>
             </AccordionContent>
           </AccordionItem>
         </Accordion>
