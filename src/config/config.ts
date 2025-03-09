@@ -220,28 +220,28 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: '1',
     category: 'large-family',
-    image: '/images/gallery/family.jpg',
+    image: '/images/gallery/pauvres-0.png',
     title: 'Family of Five',
     description: 'A large family with 3 children and both parents at home'
   },
   {
     id: '2',
     category: 'birthday',
-    image: '/images/gallery/birthday.jpg',
-    title: '7th Birthday',
+    image: '/images/gallery/birthday-101.jpg',
+    title: '101th Birthday',
     description: 'A young girl celebrating her 7th birthday with friends'
   },
   {
     id: '3',
-    category: 'sculpture',
-    image: '/images/gallery/sculpture.jpg',
+    category: 'birthday',
+    image: '/images/gallery/four-sisters.png',
     title: 'Wood Sculptor',
     description: 'A man creating a wooden sculpture in an African setting'
   },
   {
     id: '4',
-    category: 'animals',
-    image: '/images/gallery/animals.jpg',
+    category: 'birthday',
+    image: '/images/gallery/birthday-188xxx.png',
     title: 'Bird Feeding',
     description: 'A bird feeding its cubs in their nest'
   }
