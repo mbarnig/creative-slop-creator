@@ -89,7 +89,7 @@ The Lovable-Bot identified and resolved the issue, providing a [fix-report](/res
 In the final stage, I refined the title, description, introduction, and technical information with the assistance of ChatGPT.
 I uploaded images and labels for the Slop Gallery and specified image prompts for various topics.
 
-These modifications were made in my [GitHub repository]((https://github.com/mbarnig/creative-slop-creator/) which was automatically created by Lovable.dev and synchronizes bidirectionally with code changes.
+These modifications were made in my [GitHub repository](https://github.com/mbarnig/creative-slop-creator/) which was automatically created by Lovable.dev and synchronizes bidirectionally with code changes.
 
 After conducting final tests, I also adjusted the initial layout to enhance the user experience.
 
@@ -108,17 +108,11 @@ Below you'll find technical details about the implementation and resources for d
 ## API Integration
 
 The application integrates with the LetzAI API using the following workflow:
-1. User selects a category and enters parameters
-2. The app generates a prompt based on the template
-3. A POST request is sent to the LetzAI API endpoint
-4. The application polls for image generation status
-5. When ready, the image is displayed in the UI
-
-## Resources
-
-- [API Documentation](/resources/api-docs.txt)
-- [Implementation Guide](/resources/implementation-guide.pdf)
-- [Usage Examples](/resources/examples.txt)
+1.  User selects a category and enters parameters
+2.  The app generates a prompt based on the template
+3.  A POST request is sent to the LetzAI API endpoint
+4.  The application polls for image generation status
+5.  When ready, the image is displayed in the UI
 
 ## Code Snippets
 
@@ -336,29 +330,29 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: '1',
     category: 'large-family',
     image: '/images/gallery/pauvres-0.png',
-    title: 'Family of Five',
-    description: 'A large family with 3 children and both parents at home'
+    title: 'Family of Four',
+    description: 'A family with 2 children and both parents in a booth'
   },
   {
     id: '2',
     category: 'birthday',
     image: '/images/gallery/birthday-101.png',
     title: '101th Birthday',
-    description: 'A young girl celebrating her 7th birthday with friends'
+    description: 'An old man celebrating his 101th birthday alone at home'
   },
   {
     id: '3',
     category: 'birthday',
     image: '/images/gallery/four-sisters.png',
-    title: 'Wood Sculptor',
-    description: 'A man creating a wooden sculpture in an African setting'
+    title: 'Four Sisters',
+    description: 'Wrong quadruplets turned 90 and are asking for congratulations'
   },
   {
     id: '4',
     category: 'birthday',
     image: '/images/gallery/birthday-188xxx.png',
-    title: 'Bird Feeding',
-    description: 'A bird feeding its cubs in their nest'
+    title: '880 Years',
+    description: 'An old man in front of a birthday cake with candles numbered 8 8 0'
   }
 ];
 
