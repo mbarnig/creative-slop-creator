@@ -301,7 +301,7 @@ export const PROMPT_TEMPLATES: PromptTemplate[] = [
   },
   {
     id: 'birthday',
-    template: 'A photorealistic birthday celebration for a {1} who is turning {0} years old, {2}. The image should be festive, detailed and lifelike.'
+    template: 'A highly detailed and photorealistic image capturing a joyous birthday celebration for {1}, who is turning {0} years old. The centerpiece of the scene is a beautifully decorated birthday cake with lit candles, casting a warm glow. The setting and the people present are described in {2}, ensuring a lively and immersive atmosphere. The image radiates a festive mood with vibrant decorations, authentic expressions of happiness, and natural interactions. Realistic textures, soft lighting, and dynamic composition enhance the sense of depth and realism. The image should be ultra-high-resolution, emphasizing intricate details such as facial features, fabric textures, reflections on glassware, and the flickering candlelight. Rendered in the distinctive, lifelike style of @coolfilm.'
   },
   {
     id: 'sculpture',
@@ -317,7 +317,7 @@ export const PROMPT_TEMPLATES: PromptTemplate[] = [
   },
   {
     id: 'food',
-    template: 'A photorealistic image of {0} with {1}, being prepared or presented by {2}. The image should be detailed and appetizing.'
+    template: 'A highly detailed and photorealistic image of {0}, featuring {1}, being skillfully prepared or elegantly presented by {2} as cook. The dish appears rich in texture, with vibrant colors and realistic lighting that enhances its appetizing appeal. Steam, glistening sauces, or fresh ingredients contribute to a mouthwatering effect. The setting is immersive, whether a professional kitchen, a rustic home setting, or a high-end restaurant, with fine details such as reflections on utensils, the texture of the ingredients, and the cook’s precise hand movements. The composition is well-balanced, making the dish the focal point while maintaining a natural, dynamic atmosphere. The image should be ultra-high-resolution, capturing intricate elements like seasoning granules, knife marks, or the sheen of freshly cooked food. Rendered in the masterful, lifelike style of @chef.'
   },
   {
     id: 'archeology',
