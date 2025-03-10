@@ -309,7 +309,7 @@ export const PROMPT_TEMPLATES: PromptTemplate[] = [
   },
   {
     id: 'fruits-vegetables',
-    template: 'A highly detailed and photorealistic image of {0}, exhibiting {1} characteristics, being interacted with by {2}. The composition is vibrant and immersive, with rich, natural colors that enhance the unique textures and surreal qualities of the fruits. The interaction between the individuals and the fruits is dynamic and expressive, capturing realistic hand movements, reflections, and depth. Fine details such as subtle light reflections, the organic textures of the fruits, and the expressions of curiosity or wonder on the individuals faces are emphasized. The scene should be ultra-high-resolution, ensuring crisp details, lifelike lighting, and a visually striking contrast between the natural and the extraordinary. Rendered in the style of @aaron_by_harold_cohen.
+    template: 'A highly detailed and photorealistic image of {0}, exhibiting {1} characteristics, being interacted with by {2}. The composition is vibrant and immersive, with rich, natural colors that enhance the unique textures and surreal qualities of the fruits. The interaction between the individuals and the fruits is dynamic and expressive, capturing realistic hand movements, reflections, and depth. Fine details such as subtle light reflections, the organic textures of the fruits, and the expressions of curiosity or wonder on the individuals faces are emphasized. The scene should be ultra-high-resolution, ensuring crisp details, lifelike lighting, and a visually striking contrast between the natural and the extraordinary. Rendered in the style of @aaron_by_harold_cohen.'
   },
   {
     id: 'animals',
