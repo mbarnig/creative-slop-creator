@@ -65,7 +65,7 @@ I initially wrote a brief guide in broken English to outline the layout and feat
 ## 2. Enhanced Instructions
 
 To refine and clarify my initial draft, I submitted it to ChatGPT for correction and improvement.
-The revised version, saved as a [PDF document](/resources/implementation-guide), is also available in the public folder of the app.
+The revised version, saved as a [PDF document](/resources/AI-Web-Designer-Assistant-Instructions.pdf), is also available in the public folder of the app.
 
 ## 3. Programming and Testing
 
