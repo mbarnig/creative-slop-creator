@@ -60,7 +60,7 @@ The entire process consisted of five steps:
 
 ## 1. Basic Instructions
 
-I initially wrote a brief guide in broken English to outline the layout and features of this web app. The [original document](/resources/slop-we-app.txt) is stored in the public folder of the app.
+I initially wrote a brief guide in broken English to outline the layout and features of this web app. The [original document](/resources/slop-web-app.txt) is stored in the public folder of the app.
 
 ## 2. Enhanced Instructions
 
@@ -108,11 +108,11 @@ Below you'll find technical details about the implementation and resources for d
 ## API Integration
 
 The application integrates with the LetzAI API using the following workflow:
-- 1. User selects a category and enters parameters
-- 2. The app generates a prompt based on the template
-- 3. A POST request is sent to the LetzAI API endpoint
-- 4. The application polls for image generation status
-- 5. When ready, the image is displayed in the UI
+1. User selects a category and enters parameters
+2. The app generates a prompt based on the template
+3. A POST request is sent to the LetzAI API endpoint
+4. The application polls for image generation status
+5. When ready, the image is displayed in the UI
 
 ## Code Snippets
 
@@ -297,7 +297,7 @@ export const CATEGORIES: CategoryInfo[] = [
 export const PROMPT_TEMPLATES: PromptTemplate[] = [
   {
     id: 'large-family',
-    template: 'A photorealistic image of a large family with {0} children and {1}, located {2}. The image should be high quality, detailed and lifelike.'
+    template: 'A highly detailed and photorealistic image of a large family consisting of {0} children and {1} adults, set in {2}. The family members display warm, natural expressions and realistic skin textures, with diverse and lifelike facial features. Their clothing and hairstyles reflect contemporary fashion or the cultural background suited to the setting. The environment is rich in detail, with natural lighting and soft shadows enhancing the realism. The composition is well-balanced, capturing the depth and perspective of the scene. The image should be ultra-high-resolution with fine attention to intricate elements such as facial features, fabric textures, and environmental elements. Rendered in the distinctive photorealistic style of @film_is_not_dead.'
   },
   {
     id: 'birthday',
