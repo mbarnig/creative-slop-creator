@@ -60,7 +60,7 @@ The entire process consisted of five steps:
 
 ## 1. Basic Instructions
 
-I initially wrote a brief guide in broken English to outline the layout and features of this web app. The [original document](/resources/examples.txt) is stored in the public folder of the app.
+I initially wrote a brief guide in broken English to outline the layout and features of this web app. The [original document](/resources/slop-we-app.txt) is stored in the public folder of the app.
 
 ## 2. Enhanced Instructions
 
@@ -70,7 +70,7 @@ The revised version, saved as a [PDF document](/resources/AI-Web-Designer-Assist
 ## 3. Programming and Testing
 
 I then entered the enhanced instructions into the Lovable.dev Dashboard. The AI engineering bot generated the required code for the specified web app within minutes.
-The script contents were displayed on screen, and this [development report](/resources/dev-report.txt) was generated.
+The script contents were displayed on screen, and this [development report](/resources/lovable-bot-answer.txt) was generated.
 
 Once the app was initialized in a sandbox environment, I conducted the first test. The buttons, input fields, and accordions functioned as expected.
 However, when I attempted to generate an image, the image was created, but it did not appear in the designated placeholder window.
