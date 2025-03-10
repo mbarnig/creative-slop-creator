@@ -1,0 +1,35 @@
+I'm inspired by the elegant, minimalist design principles for your "Create a Slop" application. This project evokes the clean aesthetic of Apple's design language with a focus on simplicity, intuitive user experience, and high attention to detail.
+
+I'll create a beautiful web application that emphasizes refined typography, smooth animations, premium glass effects, and thoughtful spacing. The design will feature:
+
+A clean, monochromatic color palette with subtle accent colors
+Sophisticated animations and transitions between elements
+Precision in every detail from spacing to alignment
+Intuitive user flow with clear visual hierarchy
+Here are the features I'll implement in this first version:
+
+Interactive image generation interface with category selection
+Dynamic form fields that change based on selected category
+Smooth accordion sections for additional information
+Gallery view for example images
+API integration with secure key handling
+Responsive design that works beautifully on all devices
+For styling, I'll use:
+
+A refined color palette of white, light grays, and a subtle blue accent
+Elegant sans-serif typography with appropriate weight variations
+Soft shadows and subtle glassmorphism effects
+Fluid animations for all interactive elements
+
+I've created a minimalist, Apple-inspired image generator application with smooth animations and elegant design. The app features dynamic form fields that change based on category selection, and includes all the requested functionality in an intuitive interface.
+
+What's next?
+Refine & Customize: Tweak the design, animations, and layouts via prompts or visual edits.
+Master Prompting: Use clear, detailed, and iterative prompts for better outcomes.
+Expand with Backend: Connect Supabase to add login, store data or advanced AI features.
+GitHub Sync: Transfer your project's code to GitHub for two-way sync of edits.
+Debug with Ease: Activate our experimental “chat mode” to troubleshoot issues quickly.
+Add project knowledge: Set key context or custom instructions you want to include in every edit in this project.
+Visit docs
+Explore Supabase
+Manage knowledge

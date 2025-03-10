@@ -1,0 +1,62 @@
+Add an accordion labelled "Technical Information" at the bottom of the web app with the following features :
+1. the text should be interpreted as markdown
+2. The text should be easily modified in Github
+3. Links should be added as placeholder to display text and pdf files saved in the public folder 
+
+The text in the existing accordion labelled "Introduction" should also be interpreted as markdown.
+
+Here is my expected sequence:
+1. Title
+2. Description.
+3. Gallery with examples
+4. Technical Information
+5. API Key
+6. Radio Buttons
+7. Enter Details
+8. Prompt
+9. Generated Image with Start. / Clear buttons
+
+
+This app shows in the Image Gallery an overview of some viral slops. The most popular slops are using the following types of images :
+* large families or birthdays with self-pitying messages "we are poor" or "I am alone"
+* sculptures, crafts, farming or cooking with self-pitying messages "we are working hard, but nobody cares"
+* animals with cubs creating great emotions to share with others
+* archeology with oustanding discoveries creating amazement to share with others
+
+
+Remove slops and create LetzAI Artworks    
+
+To show how easy it is to create this sort of content, the present app allows you to select a topic with radio buttons and to enter some short text prompts in the related input fields to give some guidance to an image generator. But instead of using a free low-quality image generator, we will use one the worlwide best AI image generator, namely LetzAI made in Luxembourg. The prompt defined with a few words will be enhanced by templates and models developpd by some of the most famous GenAI artists in the world. Their names will be included in the generated prompts displayed in the below prompt accordion.
+
+# Technical Development
+
+The first version of this app has been programmed with the AI tool [lovable.dev](https://lovable.dev/), a superhuman full stack engineer, in a time-slot of 3 hours. The full process took 5 steps :
+
+## Basic Instructions
+I wrote a small guide in bad english to specify the layout and the features of the present web-app. The [original document](/resources/examples.txt) is saved in the public folder of the app.
+
+## Enhanced Instructions
+I submitted the basic instructions to ChatGPT to correct and improve the instructions. The [results in pdf format](/resources/implementatio-guide) are saved in the public folder of the app.
+
+## Programming and Test
+I entered the enhanced instruction into the Lovable Dashboard. The AI engineering-bot started creating the required code to realize the specified web-app which tooks a few minutes. The content of the different scripts were displayed on screen and finally this [report was returned](/resources/dev-report.txt) 
+
+Eventually, the app was started in a sandbox and I started a first test. All buttons, input fields and accordions worked as expected. I started the creation of the first image, but after the generation it was not displayed in the placeholder window.
+
+## Error correction
+I informed the Lovable-Bot about the problem with the following message : "Everything works fine, except the image generation. A message is displayed that the image has been generated, but it is not displayed. The placeholder image is not replaced by the new image." 
+
+The Lovable-Bot fixed the problem and returned this [fix-answer](/ressources/fix-report.txt).
+After these modifications, the app worked without problems.
+
+## Finetuning
+In a  last step I wrote the definitive text for the title, description, introduction and technical information with the assistance of ChatGPT. I uploaded the images and labels for the slop gallery and specified the image prompts for the different topics. I did these modifications and addings in my [related Github repository](https://github.com/mbarnig/creative-slop-creator/) which has been created by Lovable and whcih is synchronized in both direction of code changings.  
+
+After some final tests I changed also the initial layout to improve the user feeling.
+
+The whole process took me less than a day, compared to an estimated duration of two weeks to develop this app without the assistance of an AI. 
+
+## Illustration
+To show the AI development dashboard, I join a link to a [screenshot of the lovable.dev platform](/sources/images/screenshot.png).
+ 
+

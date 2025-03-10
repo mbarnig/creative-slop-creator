@@ -1,0 +1,52 @@
+Please create a new app "Create a Slop" to generate AI images with the LetzAI API, based on user inputs with radio-buttons and short text input fields. The LetzAI API specifications are uploaded to the knowledge base. The frontend web-page has the following elements :
+
+1. A title that I can modify easely in Github.
+
+2. A description that I can modify easely in Github.
+
+3. An accordion labeled "Introduction", closed at start, including a text that I can modify easily in Github.
+
+4. A series of 7 radio buttons with the following labels :
+* Large family
+* Birthday
+* Sculpture
+* Fruits & Vegetables
+* Animals
+* Food
+* Archeology
+
+5. A series of 3 short text input fields (max 20 characters) with labels that change depending on the radio buttons selected in feature 4. The 3 labels are as follows, in the same order as the labels of feature 4 :
+* Number of children (integer), Parents (mother, father, both, grand-parents), Location (home, outside)
+* Age (integer), Person (man, woman, boy, girl), Environment (alone, in hospital, with family, with friends)
+* Sculptor (man, woman, boy, girl), Material (wood. plastic, waste, vegetables), location (home, wood, Africa)
+* Cultivation (fruits, vegetables, quantities), Abnormality (small, big, likeness), Persons (family, man, woman, children, market, field)
+* Animal (birds, mammals, pets, fishes), Action (cub transport, feed), Location (nest, lair, water)
+* Food (pastries, meal),  Abnormality (quantity, look, size), Cook (man, woman, child, animal)
+* Discovery (skeleton, treasure, dinosaur, technical object), Humans (single person, a few people, many people), Location (desert, pyramid, country)
+
+Set up the labels that I can modify them easily in Github.
+
+6. Select a preconfigured prompt depending on the radio buttons selected in feature 4. Replace placeholders in the prompt for the labels of feature 5 with the inputs of the 3 text inputs.
+
+7. An accordion labeled "Introduction", closed at start, to display the generated prompt.
+  
+8. A LetzAI API KEY field to enter te secret key by the user, with a save and clear button.
+
+9. A Start button to launch the image generation, coupled with a Stop/Clear button to clear all radio buttons, text input fields, prompt field and the generated LetzAI image. The LetzAI image will be generated with the following parameters :
+* width: 1440,
+* height: 1440,
+* quality: 3,
+* creativity: 4,
+* hasWatermark: true,
+* systemVersion: 3,
+* mode: "turbo"
+
+10. An image placeholder showing an image example that I can upload in Github. This image will be replaced by the generated LetzAI image.
+
+11. An accordion labeled "Slop Examples", including a gallery to display slop images with text descriptions beneath each image. Please do the set-up of the gallery to allow me to upload the images with the related text in Github.
+
+12. Please use an attractive and modern design for the whole app.
+
+13. Please provide detailed instructions concerning the Github folders where to change text for title,  description, introduction, labels and where to upload an image for placeholder and images with text for the gallery.
+
+
