@@ -301,7 +301,7 @@ export const PROMPT_TEMPLATES: PromptTemplate[] = [
   },
   {
     id: 'birthday',
-    template: 'A highly detailed and photorealistic image capturing a joyous birthday celebration for {1}, who is turning {0} years old. The centerpiece of the scene is a beautifully decorated birthday cake featuring candles shaped in the form of the numbers, casting a warm and festive glow. The setting and the people present are described in {2}, ensuring a lively and immersive atmosphere. The image radiates a festive mood with vibrant decorations, authentic expressions of happiness, and natural interactions. Realistic textures, soft lighting, and dynamic composition enhance the sense of depth and realism. The image should be ultra-high-resolution, emphasizing intricate details such as facial features, fabric textures, reflections on glassware, and the flickering candlelight. Rendered in the  style of @coolfilm.'
+    template: 'A highly detailed and photorealistic image capturing a joyous birthday celebration for {1}, who is turning {0} years old. The centerpiece of the scene is a beautifully decorated birthday cake featuring candles shaped in the form of the numbers, casting a warm and festive glow. The setting and the people present are described in {2}, ensuring a lively and immersive atmosphere. The image radiates a festive mood with vibrant decorations, authentic expressions of happiness, and natural interactions. Realistic textures, soft lighting, and dynamic composition enhance the sense of depth and realism. The image should be ultra-high-resolution, emphasizing intricate details such as facial features, fabric textures, reflections on glassware, and the flickering candlelight. Rendered in the  style of @coolfilms.'
   },
   {
     id: 'sculpture',
@@ -313,7 +313,7 @@ export const PROMPT_TEMPLATES: PromptTemplate[] = [
   },
   {
     id: 'animals',
-    template: 'A high-quality photorealistic image of {0} {1} in their {2}. The image should be detailed, lifelike and show natural behavior.'
+    template: 'A highly detailed and photorealistic image of {0} engaging in {1} in {2}. The composition captures the animals in a natural, dynamic pose, emphasizing their authentic movements and behaviors. The setting is immersive, rich in detail, and enhances the realism, with natural lighting that highlights textures such as fur, feathers, or scales. The scene should feel lifelike, with depth and atmosphere, incorporating subtle environmental elements like wind effects, reflections, or shadows. The image should be ultra-high-resolution, showcasing intricate details such as individual hairs, water droplets, or the softness of natural textures. Rendered in the expressive and textured style of @impressionism, blending realism with painterly depth to create a visually captivating piece.'
   },
   {
     id: 'food',
@@ -321,7 +321,7 @@ export const PROMPT_TEMPLATES: PromptTemplate[] = [
   },
   {
     id: 'archeology',
-    template: 'A photorealistic archeological discovery of {0} being unearthed. The image should be detailed, scientific and realistic.'
+    template: 'A highly detailed and photorealistic image of an archaeological discovery featuring {0} being carefully unearthed. The discovery is made by {1}, who is shown meticulously excavating the site with professional tools and techniques. The scene is set in {2}, with realistic environmental details such as layers of sediment, dust particles in the air, and the texture of the exposed artifact. The composition emphasizes scientific accuracy, capturing the authenticity of an active dig site with lifelike lighting, natural shadows, and an immersive sense of depth. Fine details such as dirt on the researcher’s gloves, delicate brush strokes removing dust, and the fragile surface of the unearthed object add to the realism. The image should be ultra-high-resolution, with crisp textures, atmospheric lighting, and a documentary-style authenticity. Rendered in the highly realistic, scientific style of @charstyle.'
   }
 ];
 
