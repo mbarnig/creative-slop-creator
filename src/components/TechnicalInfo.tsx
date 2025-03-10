@@ -28,6 +28,7 @@ const TechnicalInfo: React.FC = () => {
                       h3: { component: 'h3', props: { className: 'text-lg font-bold mt-4 mb-2' } },
                       p: { component: 'p', props: { className: 'mb-4' } },
                       ul: { component: 'ul', props: { className: 'list-disc pl-5 mb-4' } },
+                      ol: { component: 'ol', props: { className: 'list-decimal pl-5 mb-4' } },
                       li: { component: 'li', props: { className: 'mb-1' } },
                       a: { 
                         component: 'a', 
