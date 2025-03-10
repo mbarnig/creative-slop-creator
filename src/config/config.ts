@@ -108,11 +108,11 @@ Below you'll find technical details about the implementation and resources for d
 ## API Integration
 
 The application integrates with the LetzAI API using the following workflow:
-1.  User selects a category and enters parameters
-2.  The app generates a prompt based on the template
-3.  A POST request is sent to the LetzAI API endpoint
-4.  The application polls for image generation status
-5.  When ready, the image is displayed in the UI
+- 1. User selects a category and enters parameters
+- 2. The app generates a prompt based on the template
+- 3. A POST request is sent to the LetzAI API endpoint
+- 4. The application polls for image generation status
+- 5. When ready, the image is displayed in the UI
 
 ## Code Snippets
 
