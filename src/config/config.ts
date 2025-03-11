@@ -82,7 +82,7 @@ I reported the issue to the Lovable-Bot with the following message:
 "Everything works fine except for image generation. A message confirms that the image has been created, but it does not appear. 
 The placeholder image is not being replaced by the generated image."
 
-The Lovable-Bot identified and resolved the issue, providing a [fix-report](/ressources/Error-Correction.pdf). After implementing these modifications, the app functioned correctly.
+The Lovable-Bot identified and resolved the issue, providing a [fix-report](/resources/Error-Correction.pdf). After implementing these modifications, the app functioned correctly.
 
 ## 5. Fine-Tuning
 
