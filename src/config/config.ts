@@ -95,6 +95,8 @@ These modifications were made in my [GitHub repository](https://github.com/mbarn
 
 After conducting final tests, I also adjusted the initial layout to enhance the user experience.
 
+Here is the README.md file of the Github repository **creatve-slop-creator**
+
 ## Summary
 The entire process took me less than a day—compared to an estimated two-week development period without AI assistance.
 
