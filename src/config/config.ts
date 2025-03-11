@@ -91,6 +91,8 @@ I uploaded images and labels for the Slop Gallery and specified image prompts fo
 
 These modifications were made in my [GitHub repository](https://github.com/mbarnig/creative-slop-creator/) which was automatically created by Lovable.dev and synchronizes bidirectionally with code changes.
 
+![github-slop-repo](/images/github-slop-repo.png)
+
 After conducting final tests, I also adjusted the initial layout to enhance the user experience.
 
 ## Summary
@@ -99,6 +101,8 @@ The entire process took me less than a day—compared to an estimated two-week d
 ## Illustration
 
 To provide a visual reference, here is a screenshot of the Lovable.dev platform.
+
+![lovable-dev screenshot](/images/lovable-dev.png)
 
 # Technical Implementation of the Backend
 
