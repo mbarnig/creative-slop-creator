@@ -221,7 +221,7 @@ export const CATEGORIES: CategoryInfo[] = [
         maxLength: 20
       },
       { 
-        label: 'Abnormality',
+        label: 'Characteristic',
         placeholder: 'small, big, likeness',
         maxLength: 20
       },
@@ -265,7 +265,7 @@ export const CATEGORIES: CategoryInfo[] = [
         maxLength: 20
       },
       { 
-        label: 'Abnormality',
+        label: 'Characteristic',
         placeholder: 'quantity, look, size',
         maxLength: 20
       },
